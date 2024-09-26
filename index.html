@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Animation</title>
+<style>
+    body{
+        background-color: black;
+    }
+    #myImg{
+     width: 700px;
+     height: 700px;
+     padding-left:400px;
+    }
+
+</style>
+
+<script>
+    function clickMe(state){
+    if(state == 'on'){
+        document.body.style.backgroundColor='yellow';
+        document.getElementById("myImg").setAttribute('src','images/bulb2.png'); 
+    }
+    
+        else{
+            document.body.style.backgroundColor="black";
+            document.getElementById("myImg").setAttribute('src','images/bulb1.jfif');      
+            
+    }
+}
+
+</script>
+
+</head>
+<body>
+     <img src="images/bulb1.jfif"id="myImg">
+     <button onclick="clickMe('on')">ON</button>
+     <button onclick="clickMe('off')">OFF</button>
+   
+   
+
+
+    <script>
+
+    </script>
+</body>
+</html>
